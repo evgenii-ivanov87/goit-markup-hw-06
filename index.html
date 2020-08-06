@@ -529,6 +529,52 @@
       </div>
     </footer>
 
-    <div class="backdrop"></div>
+    <div class="backdrop">
+      <form action="#" class="modal-form">
+        <h2 class="modal-form-titel">
+          Оставьте свои данные, мы вам перезвоним
+        </h2>
+        <div class="modal-form-input-wrapper">
+          <input
+            type="text"
+            name="user-name"
+            class="model-form-input"
+            id="user-model-name"
+          />
+          <label for="user-model-name" class="model-form-label">Имя</label>
+        </div>
+        <div class="modal-form-input-wrapper">
+          <input
+            type="tel"
+            name="user-tel"
+            class="model-form-input"
+            id="user-model-tel"
+          />
+          <label for="user-model-tel" class="model-form-label">Телефон</label>
+        </div>
+        <div class="modal-form-input-wrapper">
+          <input
+            type="email"
+            name="user-mail"
+            class="model-form-input"
+            id="user-model-mail"
+          />
+          <label for="user-model-mail" class="model-form-label">Почта</label>
+        </div>
+        <textarea name="user-message" class="model-form-message"></textarea>
+        <label class="model-form-option-label">
+          <input
+            type="checkbox"
+            name="policy"
+            value="accept-policy"
+            class="model-form-checkbox"
+          />
+          <span class="model-form-option-span"
+            >Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+          </span>
+        </label>
+        <button type="submit" class="model-btn">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>

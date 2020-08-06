@@ -420,9 +420,9 @@ ul {
   display: flex;
 }
 
-.client-item-link {
+/* .client-item-link {
   margin-right: ;
-}
+} */
 
 .client-item-link-list {
   display: flex;
@@ -485,7 +485,7 @@ ul {
   margin-right: 69px;
 }
 
-.footer-socia-link. .comand-link {
+.footer-socia-link .comand-link {
   margin-right: 94px;
 }
 
@@ -708,4 +708,58 @@ ul {
 /*MODAL)*/
 
 .backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-form {
+  width: 528px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.modal-form-titel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 30px;
+}
+
+.model-form-input {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: #757575;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 28px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.modal-form-input-wrapper {
+  position: relative;
+}
+
+.model-form-label {
+  position: absolute;
+  top: 12px;
+  left: 11px;
 }
