@@ -530,11 +530,11 @@
     </footer>
 
     <div class="backdrop">
-      <form action="#" class="modal-form">
-        <h2 class="modal-form-titel">
+      <form action="#" class="model-form">
+        <h2 class="model-form-titel">
           Оставьте свои данные, мы вам перезвоним
         </h2>
-        <div class="modal-form-input-wrapper">
+        <div class="model-form-input-wrapper">
           <input
             type="text"
             name="user-name"
@@ -543,8 +543,11 @@
             placeholder=" "
           />
           <label for="user-model-name" class="model-form-label">Имя</label>
+          <svg class="model-form-img">
+            <use href="./images/sprite.svg#icon-name"></use>
+          </svg>
         </div>
-        <div class="modal-form-input-wrapper">
+        <div class="model-form-input-wrapper">
           <input
             type="tel"
             name="user-tel"
@@ -553,8 +556,11 @@
             placeholder=" "
           />
           <label for="user-model-tel" class="model-form-label">Телефон</label>
+          <svg class="model-form-img">
+            <use href="./images/sprite.svg#icon-tel"></use>
+          </svg>
         </div>
-        <div class="modal-form-input-wrapper">
+        <div class="model-form-input-wrapper">
           <input
             type="email"
             name="user-mail"
@@ -563,19 +569,31 @@
             placeholder=" "
           />
           <label for="user-model-mail" class="model-form-label">Почта</label>
+          <svg class="model-form-img">
+            <use href="./images/sprite.svg#icon-email"></use>
+          </svg>
         </div>
-        <textarea
-          name="user-message"
-          class="model-form-message"
-          placeholder="Комментарий"
-        ></textarea>
+        <div class="model-form-input-message">
+          <textarea
+            name="user-message"
+            class="model-form-message"
+            placeholder=" "
+            id="user-comment"
+          ></textarea>
+          <label for="user-comment" class="model-form-message-comment"
+            >Комментарий</label
+          >
+        </div>
         <label class="model-form-option-label">
           <input
             type="checkbox"
             name="policy"
             value="accept-policy"
-            class="model-form-checkbox"
+            class="model-form-checkbox visually-hidden"
           />
+          <svg class="model-form-chek">
+            <use href="./images/sprite.svg#icon-chek"></use>
+          </svg>
           <span class="model-form-option-span"
             >Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
           </span>
