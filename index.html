@@ -525,13 +525,14 @@
             <div class="model-form-input-wrapper">
               <input
                 type="email"
-                name=""
+                name="mail"
                 id="mail-footer"
                 class="footer-form-input"
-                placeholder="E-mail "
+                placeholder="E-mail"
+                required
               />
               <!-- <label for="mail-footer" class="footer-label">E-mail</label> -->
-              <button class="footer-btn-item" type="button">
+              <button class="footer-btn-item" type="submit">
                 Подписаться
                 <svg class="footer-img">
                   <use href="./images/sprite.svg#icon-send"></use>
@@ -543,7 +544,7 @@
       </div>
     </footer>
 
-    <!-- <div data-modal class="backdrop">
+    <div data-modal class="backdrop is-hidden">
       <form action="#" class="model-form">
         <button data-modal-close type="button" class="modal-btn">
           <svg class="model-form-img-close">
@@ -561,6 +562,7 @@
             class="model-form-input"
             id="user-model-name"
             placeholder=" "
+            required
           />
           <label for="user-model-name" class="model-form-label">Имя</label>
           <svg class="model-form-img">
@@ -574,6 +576,7 @@
             class="model-form-input"
             id="user-model-tel"
             placeholder=" "
+            required
           />
           <label for="user-model-tel" class="model-form-label">Телефон</label>
           <svg class="model-form-img">
@@ -587,6 +590,7 @@
             class="model-form-input"
             id="user-model-mail"
             placeholder=" "
+            required
           />
           <label for="user-model-mail" class="model-form-label">Почта</label>
           <svg class="model-form-img">
@@ -610,6 +614,7 @@
             name="policy"
             value="accept-policy"
             class="model-form-checkbox visually-hidden"
+            required
           />
           <svg class="model-form-chek">
             <use href="./images/sprite.svg#icon-chek"></use>
@@ -620,7 +625,7 @@
         </label>
         <button type="submit" class="model-btn">Отправить</button>
       </form>
-    </div> -->
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>

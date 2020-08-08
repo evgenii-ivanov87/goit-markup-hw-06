@@ -347,14 +347,27 @@
             </li>
           </ul>
         </div>
-        <div class="footer-bth">
+        <div class="footer-btn">
           <b class="footer-item">Подпишитесь на рассылку</b>
-          <button class="footer-btn-item" type="button">
-            Подписаться
-            <svg class="footer-img">
-              <use href="./images/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
+          <form class="footer-form">
+            <div class="model-form-input-wrapper">
+              <input
+                type="email"
+                name="mail"
+                id="mail-footer"
+                class="footer-form-input"
+                placeholder="E-mail"
+                required
+              />
+              <!-- <label for="mail-footer" class="footer-label">E-mail</label> -->
+              <button class="footer-btn-item" type="submit">
+                Подписаться
+                <svg class="footer-img">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
