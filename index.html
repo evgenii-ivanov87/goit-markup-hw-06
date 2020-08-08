@@ -58,7 +58,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="model-btn" type="button">Заказать услугу</button>
+          <button data-modal-open class="model-btn" type="button">
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- о нас -->
@@ -519,18 +521,36 @@
         </div>
         <div class="footer-btn">
           <b class="footer-item">Подпишитесь на рассылку</b>
-          <button class="footer-btn-item" type="button">
-            Подписаться
-            <svg class="footer-img">
-              <use href="./images/sprite.svg#icon-send"></use>
-            </svg>
-          </button>
+          <form class="footer-form">
+            <div class="model-form-input-wrapper">
+              <input
+                type="email"
+                name=""
+                id="mail-footer"
+                class="footer-form-input"
+                placeholder="E-mail "
+              />
+              <!-- <label for="mail-footer" class="footer-label">E-mail</label> -->
+              <button class="footer-btn-item" type="button">
+                Подписаться
+                <svg class="footer-img">
+                  <use href="./images/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
 
-    <div class="backdrop">
+    <!-- <div data-modal class="backdrop">
       <form action="#" class="model-form">
+        <button data-modal-close type="button" class="modal-btn">
+          <svg class="model-form-img-close">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+
         <h2 class="model-form-titel">
           Оставьте свои данные, мы вам перезвоним
         </h2>
@@ -600,6 +620,8 @@
         </label>
         <button type="submit" class="model-btn">Отправить</button>
       </form>
-    </div>
+    </div> -->
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -576,6 +576,37 @@ ul {
   border-radius: 4px;
 }
 
+.footer-form {
+  display: flex;
+}
+
+.footer-form-input {
+  width: 358px;
+  height: 50px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  background-color: #2f303a;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  color: #fff;
+}
+.footer-label {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.footer-btn .model-form-input-wrapper {
+  display: flex;
+}
+/* .footer-form-input:focus + .footer-label,
+.footer-form-input:not(:placeholder-shown) + .footer-label {
+  transform: translateY(-39px);
+  color: var(--backgraoud-color); */
+
 /* Portfolio.html */
 
 .jobs.container {
@@ -889,6 +920,32 @@ ul {
   border-radius: 2px;
   margin-right: 8.38px;
 }
-.model-form-option-label:checked .model-form-chek {
-  fill: tomato;
+.model-form-option-label:checked + .model-form-chek {
+  fill: red;
+}
+
+.modal-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  fill: #000000;
+  outline: none;
+}
+.model-form-img-close {
+  width: 11px;
+  height: 11px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover .model-form-img-close,
+.modal-btn:focus .model-form-img-close {
+  fill: var(--accent-color);
 }
